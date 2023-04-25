@@ -6,7 +6,6 @@ export const GifApp = () => {
 
     const onAddCategory = (newCategory) => {
         const arrCheck = categories.map( (cat) => {return cat.toLocaleLowerCase} );
-        console.log(arrCheck);
         const valCheck = newCategory.toLowerCase
         if(arrCheck.includes(valCheck)) return;
         setCategories([newCategory, ...categories]);
